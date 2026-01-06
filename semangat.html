@@ -3,15 +3,27 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Semangat!</title>
+    <style>
+        img { transition: transform 0.3s ease; cursor: pointer; }
+        img:hover { transform: scale(1.1) rotate(-3deg); }
+    </style>
 </head>
 <body style="background-color: lightblue; font-family: Arial;">
-    <fieldset style="background-color: white;">
-        <h1 style="color: lightpink; text-align: center;">SEMANGATT!!<span>😊 </span></h1>
+    <fieldset style="background-color: white; border-radius: 15px; border: 2px solid lightpink; padding: 20px;">
+        <h1 style="color: lightpink; text-align: center;">
+            SEMANGATT!!<span onclick="alert('Semangat belajarnya ya!')" style="cursor:pointer;">😊</span>
+        </h1>
+        
         <img src="gambar/semangat.jpeg" style="height: 300px; display: block; margin: 0 auto;">
+        
         <h1 style="color: lightpink; text-align: center;">¡Eres genial!<span>👏</span></h1>
 
+        <div style="text-align: center;">
+            <button onclick="document.body.style.backgroundColor = 'lavender'" style="padding: 8px 15px; border-radius: 20px; border: 1px solid pink; background: white; cursor: pointer;">
+                Ubah Warna Layar 🎨
+            </button>
+        </div>
     </fieldset>
-    
 </body>
 </html>
